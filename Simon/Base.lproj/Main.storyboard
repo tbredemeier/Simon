@@ -77,6 +77,9 @@
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onStartButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fIO-S4-D16"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdS-UV-rnQ">
                                 <rect key="frame" x="57" y="792" width="300" height="40"/>
@@ -90,6 +93,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="9fV-yt-YDS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="DuX-9W-5xI"/>
                             <constraint firstItem="CdS-UV-rnQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HE5-iZ-7oy"/>
@@ -101,9 +105,25 @@
                             <constraint firstItem="Fao-uJ-24y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qVI-0o-PE7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Hg1-LA-W8P" appends="YES" id="mNk-t1-LKL"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="colorsFrame" destination="Fao-uJ-24y" id="Aia-uP-WD4"/>
+                        <outlet property="messageLabel" destination="CdS-UV-rnQ" id="e21-81-x70"/>
+                        <outletCollection property="colorDisplays" destination="n7F-IQ-hUd" collectionClass="NSMutableArray" id="OS2-B0-8EY"/>
+                        <outletCollection property="colorDisplays" destination="seI-Po-YM2" collectionClass="NSMutableArray" id="e22-xD-C0D"/>
+                        <outletCollection property="colorDisplays" destination="i2B-6O-9bU" collectionClass="NSMutableArray" id="cmh-zt-CHh"/>
+                        <outletCollection property="colorDisplays" destination="4Ij-Pe-gxK" collectionClass="NSMutableArray" id="HH4-lF-lXr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Hg1-LA-W8P">
+                    <connections>
+                        <action selector="onColorTapped:" destination="BYZ-38-t0r" id="BAB-L1-9YF"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
