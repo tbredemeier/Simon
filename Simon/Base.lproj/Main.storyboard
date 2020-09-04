@@ -24,7 +24,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fao-uJ-24y">
                                 <rect key="frame" x="97" y="338" width="220" height="220"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n7F-IQ-hUd">
+                                    <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n7F-IQ-hUd">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -32,7 +32,7 @@
                                             <constraint firstAttribute="height" constant="100" id="hFC-c6-tHf"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="seI-Po-YM2">
+                                    <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="seI-Po-YM2">
                                         <rect key="frame" x="120" y="0.0" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -40,7 +40,7 @@
                                             <constraint firstAttribute="height" constant="100" id="q1O-k1-PMt"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2B-6O-9bU">
+                                    <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2B-6O-9bU">
                                         <rect key="frame" x="0.0" y="120" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -48,7 +48,7 @@
                                             <constraint firstAttribute="width" constant="100" id="lSV-US-Ku1"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ij-Pe-gxK">
+                                    <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ij-Pe-gxK">
                                         <rect key="frame" x="120" y="120" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -112,6 +112,7 @@
                     <connections>
                         <outlet property="colorsFrame" destination="Fao-uJ-24y" id="Aia-uP-WD4"/>
                         <outlet property="messageLabel" destination="CdS-UV-rnQ" id="e21-81-x70"/>
+                        <outlet property="startButton" destination="Uh6-P5-S2L" id="V8f-Ep-f6r"/>
                         <outletCollection property="colorDisplays" destination="n7F-IQ-hUd" collectionClass="NSMutableArray" id="OS2-B0-8EY"/>
                         <outletCollection property="colorDisplays" destination="seI-Po-YM2" collectionClass="NSMutableArray" id="e22-xD-C0D"/>
                         <outletCollection property="colorDisplays" destination="i2B-6O-9bU" collectionClass="NSMutableArray" id="cmh-zt-CHh"/>
